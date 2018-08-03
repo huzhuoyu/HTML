@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #wrap{
+            position: fixed;/*悬空，相当于全屏操作*/
+            height: 100%;
+            width: 100%;
+            border: 1px solid red;
+            display: flex;/*显示设置，默认横向*/
+            flex-flow: column;/*控制方向的，row/column行列   norap控制是否换行 reverse控制左右位置镜面对称*/
+        justify-content: space-between;/*横向布局设置*/
+            /*默认flex-start.flex-end能让层居右,center:居中，spacebetween两端对齐*/
+        }
+        .sub{
+            height: 100%;
+            width: 100%;
+
+        }
+        #d1{
+            height: 20px;
+            background-color: red;
+        }
+        #d2{
+            height: 30px;
+            background-color:green;
+        }
+        #d3{
+
+            flex: 1;
+            /*height: 200px; 有了flex：1；就不能有高度*/
+            background-color: blue;
+        }
+        #d4{
+            height: 20px;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="d1" class="sub"></div>
+    <div id="d2" class="sub"></div>
+    <div id="d3" class="sub"></div>
+    <div id="d4" class="sub"></div>
+</div>
+</body>
+</html>

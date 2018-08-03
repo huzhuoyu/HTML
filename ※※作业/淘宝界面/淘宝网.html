@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 微软雅黑;
+        }
+        .悬浮{
+            height: 60px;
+            width: 100%;
+            background-color:wheat;
+            color: red;
+            opacity: .5;
+            text-align: center;
+            line-height: 60px;
+            position: fixed;
+            top: 0px;
+        }
+        .图标{
+            height: 60px;
+            width: auto;
+        }
+        .搜索框{
+            width: 400px;
+            height: 60px;
+            line-height: 60px;
+            position: fixed;
+            left: 800px;
+            text-align: center;
+        }
+        .宝贝 {
+            display:  inline-block;
+            height: 310px;
+            width: 240px;
+            margin: 10px;
+            box-shadow: 0px 0px 10px gray;
+            border-radius: 10px 10px 10px 10px;
+            overflow: hidden;
+            position: relative;
+
+        }
+        .宝贝:hover .购买{
+            top : 270px;
+        }
+        .购买{
+            height: 40px;
+            width: 100%;
+            background-color:crimson;
+
+            text-align: center;
+            font-size: 22px;
+            color: white;
+            line-height: 40px;
+
+            position: absolute;
+            top : 310px;
+
+            transition: all .2s ease-in-out;
+        }
+        .图片 {
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+        }
+        .详情 {
+            font-size: 14px;
+            color:orangered;
+            margin: 10px;
+            font-weight: 200;
+            height: 40px;
+        }
+        .价格 {
+            margin: 10px;
+            font-family: 微软雅黑;
+            text-align: left;
+            font-size: 18px;
+            color: red;
+            height: 20px;
+        }
+        .店铺{
+            margin: 10px;
+            text-align: left;
+            font-size: 14px;
+            color: orange;
+            height: 20px;
+        }
+        .付款{
+            display: inline-block;
+            margin: 10px;
+            text-align: right;
+            font-size: 14px;
+            color: gray;
+            height: 20px;
+        }
+        .斜杠 {
+            height: 40px;
+            width: 100%;
+            background-color: crimson;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            line-height: 40px;
+
+            transform: rotate(40deg);
+
+            position: absolute;
+
+            right: -70px;
+            top: 10px;
+            box-shadow: 0px 0px 4px #212121;
+        }
+.左右布局{
+    display: inline-block;
+}
+        .左边{
+            top: 60px;
+            display:  inline-block;
+            text-align: left;
+            width: 1100px;
+            border:1px solid red;
+        }
+        .右边{
+            top: 60px;
+            display:  inline-block;
+            text-align: left;
+            width: 350px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+<div class="悬浮">
+    欢迎光临本店。
+</div>
+    <div class="搜索框" >
+        <form action="http://taobao.com/searc">
+            <input name="q" >
+            <input type="submit" value="搜索">
+</form>
+    </div>
+
+<dis class="左右布局">
+<div class="左边" >
+    <div class="图标" ><img src="淘宝网.svg " height="60px" width="120px"></div>
+    <div class="宝贝">
+        <div class="斜杠">50% off</div>
+    <div class="图片 " style="background-image: url(1.png);"></div>
+    <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+    <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+    <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+    <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+            src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+</div>
+    <div class="宝贝">
+        <div class="斜杠">50% off</div>
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+    <div class="宝贝">
+        <div class="斜杠">50% off</div>
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+    <div class="宝贝">
+        <div class="斜杠">50% off</div>
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+    <div class="宝贝">
+        <div class="斜杠">50% off</div>
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+    <div class="宝贝">
+        <div class="斜杠">50% off</div>
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+    <div class="宝贝">
+        <div class="斜杠">50% off</div>
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+    <div class="宝贝">
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+    <div class="宝贝">
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+    <div class="宝贝">
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+    <div class="宝贝">
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+    <div class="宝贝">
+        <div class="图片 " style="background-image: url(1.png);"></div>
+        <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+        <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+        <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+        <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                src="广告.svg" height="19px"></div>
+        <div class="购买">购买</div>
+    </div>
+</div>
+<div class="右边">
+        <div class="宝贝">
+            <div class="图片 " style="background-image: url(1.png);"></div>
+            <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+            <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+            <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+            <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="广告.svg" height="19px"></div>
+            <div class="购买">购买</div>
+        </div>
+        <div class="宝贝">
+            <div class="斜杠">50% off</div>
+            <div class="图片 " style="background-image: url(1.png);"></div>
+            <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+            <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+            <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+            <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="广告.svg" height="19px"></div>
+            <div class="购买">购买</div>
+        </div>
+        <div class="宝贝">
+            <div class="斜杠">50% off</div>
+            <div class="图片 " style="background-image: url(1.png);"></div>
+            <div class="价格 ">¥1699.00&nbsp;<img src="包邮@x.svg" height="15px"><div class="付款">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;273人付款</div></div>
+            <div class="详情">AC Air Jordan 1 AJ1 乔1 黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎</div>
+            <div class="店铺"><img src="汉堡菜单.svg" height="13px">Jordan官方旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海</div>
+            <div class="结尾"><img src="天猫%20(1).svg" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="广告.svg" height="19px"></div>
+            <div class="购买">购买</div>
+        </div>
+    </div>
+</dis>
+</body>
+</html>

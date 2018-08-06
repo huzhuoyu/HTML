@@ -1,0 +1,45 @@
+#menu{
+    height: 55px;
+    width: 100%;
+    border-top:1px solid #bdbdbd;
+    background-color:#F5F5F5;
+    display: flex;
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+}
+.bottom{
+    height: 55px;
+    width: 100%;
+}
+.icon{
+    /*width: 35px;*/
+    height: 35px;
+
+}
+.smalldoc{
+    height: 25px;
+    color: #bdbdbd;
+    font-size: 13px;
+    text-align: center;
+}
+#ic1{
+    background-image: url("../photo/消息灰.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#ic2{
+    background-image: url("../photo/通讯录.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#ic3{
+    background-image: url("../photo/发现绿.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#ic4{
+    background-image: url("../photo/我.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

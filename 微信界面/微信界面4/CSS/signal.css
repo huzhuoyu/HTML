@@ -1,0 +1,150 @@
+#signal{
+    height: 30px;
+    width: 100%;
+    background-color:#313131;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+#signal-left{
+flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#signal-left div{
+    margin: 2px;
+}
+
+#signal-center{
+    width: 60px;
+    height: 30px;
+}
+#signal-right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#signal-right div{
+    margin-right: 1px;
+}
+/*信号开始*/
+#signal-area{
+    height: 16px;
+    width: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+#signal-area div{
+/*background-color: white;*/
+    width: 4px;
+    margin-left: 2px;
+    border-radius: 2px;
+}
+#signal-area div:nth-child(1){
+     height: 6px;
+ }
+#signal-area div:nth-child(2){
+    height: 9px;
+}
+#signal-area div:nth-child(3){
+    height: 12px;
+}
+#signal-area div:nth-child(4){
+    height: 16px;
+}
+.signal-ok{
+    background-color: white;
+}
+
+.signal-lose{
+    background-color:gray;
+}
+/*信号结束*/
+
+
+
+/*电池开始*/
+#battery{
+    width: 40px;
+    height: 18px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+#battery-body{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    height: 12px;
+    width: 30px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+#battery-core{
+    margin: 1px;
+    height:10px;
+    width: 28px;
+    background-color: white;
+    border-radius: 2px;
+}
+#battery-header{
+    height: 6px;
+    width: 2px;
+    background-color: gray;
+    border-radius: 0px 2px 2px 0px;
+}
+/*电池结束*/
+@keyframes charge {
+
+    0%{
+        width: 1px;
+        background-color: red;
+    }
+    25%{
+         width: 7px;
+         background-color: yellow;
+     }
+    80%{
+        width: 22px;
+        background-color: green;
+    }
+    100%{
+        width: 28px;
+        background-color: white;
+    }
+}
+.charging{
+    animation: charge 4s linear infinite;
+}
+/*闹钟开始*/
+#clock{
+    width: 21px;
+    height: 13px;
+    background-image: url("../photo/闹钟.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*闹钟结束*/
+#rotate{
+    width: 21px;
+    height: 15px;
+    background-image: url("../photo/旋转锁定.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#position{
+    width: 21px;
+    height: 13px;
+    background-image: url("../photo/位置.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
